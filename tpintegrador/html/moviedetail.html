@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie-Detail</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="movie detail">
+
+    <!--Header-->
+    <header class= "cabecera">
+        <nav>
+            <img class="logo" src="./imagenes/Logo/Logo.png" alt="logo">
+            <ul class="main">
+                <li class="opciones"> <a href="./index.html"> HOME </a> </li>
+                <li class="opciones"> <a href="./genres.html"> GENRES </a> </li>
+                <li class="opciones"> <a href="./favoritos.html"> FAVORITES </a> </li>
+            </ul>
+        </nav>
+        </header> 
+
+
+    <main>
+
+
+
+ <!-- Buscador -->
+ <form action="search-busqueda.html" method="get">
+    <form action="busqueda.html" method="get">
+        <div class="form-group my-4 text-center">
+            <input type="text" class="col-9" name="searchData" placeholder="Buscar..." value="">
+            <button type="submit" class="btn btn-success col-1">Search</button>
+            <small id="emailHelp" class="form-text text-muted"></small>
+        </div>
+            <div>
+                <!-- Radio button -->
+                <input type="radio" name="mediaType" id="all" value="all" checked>
+                <label class="mr-2" for="all">All</label>
+                <!-- Radio button -->
+                <input type="radio" name="mediaType" id="movie" value="movie">
+                <label class="mr-2" for="movie">Movies</label>
+                <!-- Radio button -->
+                <input type="radio" name="mediaType" id="tv" value="tv">
+                <label class="mr-2" for="tv">TV/Series</label>
+                <!-- Radio button -->
+                <input type="radio" name="mediaType" id="person" value="person">
+                <label class="mr-2" for="person">People</label>
+            </div>
+
+        </div>
+    </form>
+
+    <h1 class="alert alert-primary"></h1>
+
+
+
+
+        <div class="peliculas">
+        </div>
+        <div class="review">
+        </div>
+        
+    </main>
+
+
+    <!--Footer-->
+    
+    <footer>
+        <p class="nosotras">Alexia Alurralde, Noel Russo Mendez & Sol Saha</p>
+        <ul class="ultimalinea">
+            <li class="tmdb"><img src="./imagenes/Logo/logo TMDB.png"  alt="tmdb"></li>
+            <li class="facebook"><img src="./imagenes/redes/facebook.png" alt="facebook"></li>
+            <li class="instagram"><img src="./imagenes/redes/instagram.png" alt="instagram"></li>
+            <li class="twitter"><img src="./imagenes/redes/twitter.png" alt="twitter"></li>
+        </ul>
+    </footer>
+
+    
+    <script src="./js/moviedetail.js"></script>
+
+</body>
+</html>

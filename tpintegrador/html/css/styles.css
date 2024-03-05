@@ -1,0 +1,415 @@
+body {
+background-color: #212121 !important;
+    margin: 0;
+} 
+
+.cabecera{
+    background: linear-gradient(#212121d2,rgba(44, 44, 44, 0)) !important;
+}
+
+nav {
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    color: white !important; 
+    border-bottom: 1px solid rgba(190, 30, 190, 0.781) !important;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 150px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0%;
+    text-decoration: none;
+    color: white; 
+    list-style: none;
+}
+
+.space{
+    margin-bottom: 95px;
+}
+
+.opciones {
+    margin-right: 20px;
+}
+
+
+/* Empieza buscador  */
+form {
+    padding: 10px 0px 0px 85px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-left: 4%;
+}
+
+.form-group input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    width: 80%;
+    background: #f1f1f1;
+    margin-bottom: 20px;
+}
+        
+.form-group button {
+
+    padding: 10px;
+    background: purple;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; 
+    cursor: pointer;
+}
+        
+.form-group button:hover {
+    background: #0b7dda;
+}
+        
+
+.form-group::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.mr-2 {
+    color: white;
+}
+
+.card-title {
+    color: white;
+}
+
+.card-img-top {
+    width: 170px;
+}
+
+.btn.btn.btn-primary {
+    color: purple;
+    margin-bottom: 20px;
+}
+
+.busqueda {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.divbusqueda {
+display: grid;
+
+}
+.mr-2 {
+padding: 10px;
+text-align: justify;
+}
+
+ .botones{
+text-align: center;
+ }
+
+
+.card-img-top {
+    color: white;
+ }
+
+
+ .ruedita {
+    display:inline-block;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #838383; /* Blue */
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    animation: spin 2s linear infinite;  
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+ 
+  }
+
+
+/* Termina buscador */
+
+
+.favsusuario {
+    display: block;
+}
+
+.main a {
+    color: white;
+    text-decoration: none;
+    font-size: 95%;
+}
+
+p {
+    color: white;
+}
+
+h2 {
+    color: white !important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+
+.principal {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    margin-left: 2%;
+    font-family: sans-serif;
+
+}
+
+.titulo {
+    color: white !important;
+    font-family: sans-serif !important;
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.titulo a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+    
+}
+
+.containerContent {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2%;
+    padding: 0%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+}
+
+.media{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.media img {
+    width: 85%;
+}
+
+footer {
+    margin-top: 50px !important;
+    color: white !important;
+    font-size: 15px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    color: white !important; 
+    border-top: 1px solid rgba(190, 30, 190, 0.781) !important;
+    background: linear-gradient(rgba(44, 44, 44, 0), #212121d2) !important;
+}
+
+.ultimalinea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0%;
+    text-decoration: none;
+    color: white; 
+    list-style: none;
+}
+
+.copy {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mano img {
+    width: 100px !important;
+    margin: 5px !important;
+    margin-top: 15px !important;
+}
+.facebook img {
+    width: 30px !important;
+    margin: 10px !important;
+}
+.instagram img {
+    width: 30px !important;
+    margin: 10px !important;
+}
+.twitter img{
+    width: 55px !important;
+    margin: 5px !important;
+}
+.tmdb img {
+    width: 80px !important;
+    margin: 5px !important;
+}
+
+/* Movie y serie detail */
+
+.detail h2 {
+    color: white;
+    font-weight: bold;
+}
+
+.detail p {
+    color: white;
+    font-family: sans-serif;
+    text-align: start;
+}
+
+.reviewTexto {
+    font-size: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.foto {
+    width: 70%;
+    margin-top: 90px;
+}
+
+.tituloSeries {
+    gap: none;
+    margin-bottom: 10%;
+}
+
+.textoSeries {
+    gap: none;
+    line-height: 40px;
+}
+
+.gridContainer {
+    background-color: #212121;
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    gap: 30px;
+    padding: 16px;
+    margin-left: 15% ;
+    margin-right: 15%;
+    margin-bottom: 4%;
+    margin-top: 1%;
+} */
+
+/* .gridMenu {
+    display: grid;
+    grid-template-columns: 1fr ;
+    align-self: center;
+    text-align: center;
+} */
+
+.gridContainer img {
+    width: 100%;
+}
+
+
+/* Detail generos */
+
+img.fotosDetalle {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 150px;
+}
+
+/*Fvoritos*/
+
+.favorito{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.imgfav{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    .main{
+        display: block;
+    }   
+    
+    .principal {
+        text-align: left;
+    }
+    
+    .containerContent {
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .gridContainer{
+        grid-template-columns: 1fr;
+    }
+    
+    .media img {
+        width: 100%;
+    }
+    
+    .titulo {
+        display: none;
+    }
+    
+    footer {
+        display: block;
+    }
+
+    .copy {
+        display: block;
+        text-align: center;
+    }
+
+    .nosotras {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:420px) {
+
+    .containerContent {
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+
+    .ultimalinea {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+

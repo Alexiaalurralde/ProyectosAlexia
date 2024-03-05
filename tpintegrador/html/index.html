@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Carousel Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+
+</head>
+
+
+<body class="body">
+
+    <!--Header-->
+   <header class= "cabecera">
+       <nav>
+           <img class="logo" src="./imagenes/Logo/Logo.png" alt="logo">
+           <ul class="main">
+               <li class="opciones"> <a href="./index.html"> HOME </a> </li>
+               <li class="opciones"> <a href="./genres.html"> GENRES </a> </li>
+               <li class="opciones"> <a href="./favoritos.html"> FAVORITES </a> </li>
+           </ul>
+       </nav>
+    </header>
+   
+
+    
+    <!--Main-->
+
+    <!-- Buscador -->
+  
+<form action="busqueda.html" method="get"> 
+    <div class="form-group my-4 text-center"> 
+        <input type="text" name="searchData" placeholder="Buscar..." value="">  
+        <button type="submit" class="btn btn-success">Search</button>
+        
+        <div class="botones">
+            <!-- Radio button -->
+            <input type="radio" name="mediaType" id="all" value="all" checked>
+            <label class="mr-2" for="all">All</label>
+            <!-- Radio button -->
+            <input type="radio" name="mediaType" id="movie" value="movie" >
+            <label class="mr-2"for="movie">Movies</label>
+            <!-- Radio button -->
+            <input type="radio" name="mediaType" id="tv" value="tv" >
+            <label class="mr-2" for="tv">TV/Series</label>
+            <!-- Radio button -->
+            <input type="radio" name="mediaType" id="person" value="person" >
+            <label class="mr-2" for="person">People</label>
+        </div>
+        <span class="ruedita">
+        </span>
+    </div>    
+    </form>
+
+
+    <!--Carrusel-->
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+    
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="imagenes/Banner/Banner one click.jpg " alt="First slide">
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="imagenes/Banner/IMG_5649.jpg" alt="Second slide">
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="imagenes/Banner/IMG_5651.jpg" alt="Third slide">
+            </div>
+        </div>
+    
+    </div> 
+
+
+    <main>
+        <div class="space">
+            <h2 class="principal">Trending</h2>
+            <section class="containerContent estrenos">
+                <!-- Info desde fetch -->
+            </section>
+        </div>
+       
+        <div class="space">
+            <h2 class="principal">Series Release </h2>
+            <section class="containerContent series">
+                <!-- Info desde fetch -->
+            </section>
+        </div>
+        
+        <div class="space">
+            <h2 class="principal">Originals</h2>
+            <section class="containerContent originales">
+                <!-- Info desde fetch -->
+            </section>
+        </div>
+        
+    </main>
+
+
+    <!--Footer-->
+    <footer>
+        <p class="nosotras">Alexia Alurralde, Noel Russo Mendez & Sol Saha</p>
+        <ul class="ultimalinea">
+            <li class="mano"><img src="./imagenes/Logo/soloMano.jpg" alt="logomano"></li>
+            <li class="facebook"><img src="./imagenes/redes/facebook.png" alt="facebook"></li>
+            <li class="instagram"><img src="./imagenes/redes/instagram.png" alt="instagram"></li>
+            <li class="twitter"><img src="./imagenes/redes/twitter.png" alt="twitter"></li>
+        </ul>
+    </footer>
+
+    <script src="./js/index.js"></script>
+    
+</body>
+</html>
